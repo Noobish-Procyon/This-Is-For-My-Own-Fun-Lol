@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Arcane Academy RPG</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="game">
+    <h2>Arcane Academy RPG</h2>
+
+    <div><b>HP:</b> <span id="hp"></span></div>
+    <div><b>Level:</b> <span id="level"></span></div>
+    <div><b>XP:</b> <span id="xp"></span></div>
+    <div><b>Gold:</b> <span id="gold"></span></div>
+    <div><b>Inventory:</b> <span id="inv"></span></div>
+
+    <hr>
+
+    <h3>Overworld Map</h3>
+    <div id="map"></div>
+
+    <hr>
+
+    <h3>Battle</h3>
+    <div><b>Enemy:</b> <span id="enemyName"></span></div>
+    <div><b>Enemy HP:</b> <span id="enemyHp"></span></div>
+
+    <div><b>Spell:</b>
+      <select id="spellSelect"></select>
+    </div>
+
+    <div><b>Subject:</b>
+      <select id="subjectSelect">
+        <option value="math">Math</option>
+        <option value="science">Science</option>
+        <option value="reading">Reading</option>
+        <option value="coding">Coding</option>
+      </select>
+    </div>
+
+    <p id="question"></p>
+    <input id="answer" placeholder="Your answer">
+    <button id="castBtn">Cast Spell</button>
+
+    <div id="log"></div>
+  </div>
+
+  <!-- JavaScript Files -->
+  <script src="js/save.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/items.js"></script>
+  <script src="js/enemies.js"></script>
+  <script src="js/quests.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/combat.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
