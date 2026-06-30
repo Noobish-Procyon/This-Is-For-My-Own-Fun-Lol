@@ -1,0 +1,145 @@
+/* ============================
+   GLOBAL PAGE STYLE
+   ============================ */
+body {
+  background: #0f0f1a;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#game {
+  width: 520px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #1a1a2e;
+  border-radius: 12px;
+  border: 2px solid #4f46e5;
+  box-shadow: 0 0 20px rgba(79, 70, 229, 0.4);
+}
+
+/* ============================
+   TEXT + LABELS
+   ============================ */
+h2, h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #a5b4fc;
+}
+
+b {
+  color: #c7d2fe;
+}
+
+/* ============================
+   BUTTONS + INPUTS
+   ============================ */
+button, select, input {
+  margin: 6px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+}
+
+button {
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #6366f1;
+}
+
+button:disabled {
+  background: #6b7280;
+  cursor: default;
+}
+
+input {
+  width: 80%;
+  background: #2a2a4a;
+  color: white;
+  border: 1px solid #4f46e5;
+}
+
+select {
+  background: #2a2a4a;
+  color: white;
+  border: 1px solid #4f46e5;
+}
+
+/* ============================
+   LOG AREA
+   ============================ */
+#log {
+  white-space: pre-line;
+  margin-top: 15px;
+  min-height: 80px;
+  background: #111122;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #4f46e5;
+}
+
+/* ============================
+   OVERWORLD MAP
+   ============================ */
+#map {
+  margin-top: 10px;
+}
+
+.map-tile {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  margin: 6px;
+  background: #2a2a4a;
+  border-radius: 10px;
+  line-height: 80px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 2px solid #4f46e5;
+}
+
+.map-tile:hover {
+  background: #3b3b5c;
+  transform: scale(1.05);
+}
+
+/* ============================
+   ANIMATIONS (Hit Effects)
+   ============================ */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); }
+  75% { transform: translateX(-6px); }
+  100% { transform: translateX(0); }
+}
+
+.enemy-hit {
+  animation: shake 0.3s;
+}
+
+.player-hit {
+  animation: shake 0.3s;
+}
+
+/* ============================
+   SPRITE CONTAINERS (Optional)
+   ============================ */
+.sprite {
+  width: 120px;
+  height: 120px;
+  margin: 10px auto;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  border: 2px solid #4f46e5;
+}
